@@ -21,25 +21,23 @@
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
-  <body style=" background-image: url(img/11.jpg); background-size: cover;">
+  <body style=" background-image: url(img/11.jpg); position: center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
       
 
     <div class="container">
-
-      <div style="padding-top: 50px;">
-        <div id="title">
+      <div class="content-block">
+        <div class="jumbotron bg-warning">
+          
           <h1>CPU Scheduling</h1>
-          <p>Project by: Eugenio M. Ancheta III</p>
-          <p>Aldrian R. Infante</p>
-          <p>Richter G. Montaño</p>
-          <hr>
-      
+        </div>
+      </div>
+      </div>
         <div class="container-fluid">
 
           <div class="row">
           <!-- Scheduler Type & the dropdown menu -->
             <div class="col-md-4">
-              <h3 class="bg-info">Scheduler Type</h3>
+              <h5 class="bg-info">Scheduler Type</h5>
             </div>
             <div class="col-md-2">
               <div class="dropdown">
@@ -59,9 +57,9 @@
           <!-- Processes # -->
           <div class="row" style="margin-top: 10px;">
             <div class="col-md-4">
-              <h3 class="bg-info">Processes No.</h3>
+              <h5 class="bg-info">Processes No.</h5>
             </div>
-            <div class="col-xs-2">
+            <div class="col-xs-8">
               <input type="text" class="form-control processes-number">
             </div>
           </div>
@@ -75,17 +73,19 @@
           </br>
           <form style="font: menu;color: #b6b6b6;" class="options">
           </form>
+          <br>
+          <br>
           
           <div class="row">
-            <div class="col-md-5 text-white" >
-              <h3 style="font-size: 15px;">Average Wating Time:</h3>
+            <div class="col-md-3 text-white" >
+              <h5 style="font-size: 15px;">Average Wating Time:</h5>
             </div>
             <div class="col-xs-2 avarage-time" style="font-size: 15px;">
             </div>
           </div>
           <div class="row" style="margin-top: 10px;">
-            <div class="col-md-5 text-white">
-              <h3 style="font-size: 15px;">Average Turn Around Time:</h3>
+            <div class="col-md-3 text-white">
+              <h5 style="font-size: 15px;">Average Turn Around Time:</h5>
             </div>
             <div class="col-xs-2 turn-around-time" style="font-size: 15px;">
             </div>
@@ -93,13 +93,13 @@
           <div class = "inputs-container">
             <div class="row" style="margin-top: 10px;">
               <div class="col-xs-4">
-                <input type="text" class="form-control process-name" placeholder="Process Name">
+                <input type="text" class="form-control process-name" placeholder="PName">
               </div>
-              <div class="col-xs-3">
-                <input type="text" class="form-control arrival-time" placeholder="Arival Time">
+              <div class="col-xs-4">
+                <input type="text" class="form-control arrival-time" placeholder="AT">
               </div>
-              <div class="col-xs-3">
-                <input type="text" class="form-control burst-time" placeholder="Burst Time">
+              <div class="col-xs-4">
+                <input type="text" class="form-control burst-time" placeholder="BT">
               </div>
             </div>
           </div>
